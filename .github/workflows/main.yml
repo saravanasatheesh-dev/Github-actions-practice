@@ -1,0 +1,17 @@
+name: Basic Workflow
+ 
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  simple-job:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+ 
+      - name: Print file name
+        run: echo "File exists: saravanan.txt"
